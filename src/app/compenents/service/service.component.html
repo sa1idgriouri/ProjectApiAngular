@@ -1,0 +1,31 @@
+<mdb-card style="background-image: url('https://mdbootstrap.com/img/Photos/Others/gradient1.jpg')">
+  <div class="text-white text-center py-5 px-4 my-5">
+    <div>
+      <h2 class="card-title h1-responsive pt-3 mb-5 font-bold"><strong>services</strong></h2>
+
+    </div>
+  </div>
+</mdb-card>
+
+<div class="container mt-5">
+  <mdb-breadcrumb>
+    <mdb-breadcrumb-item routerLink="" class="blue-text">Home</mdb-breadcrumb-item>
+    <mdb-breadcrumb-item class="active">services</mdb-breadcrumb-item>
+  </mdb-breadcrumb>
+  <app-services [NumbrePage]="numro"></app-services>
+  <nav aria-label="Page navigation example">
+    <ul class="pagination pg-blue justify-content-center">
+      <li class="page-item disabled">
+        <a class="page-link" tabindex="-1" mdbWavesEffect>Previous</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="" routerLink="/services"  mdbWavesEffect>1</a></li>
+      <li class="page-item"><a class="page-link" href="/services"  (click)= "artzyad()" mdbWavesEffect>2</a></li>
+      <li class="page-item"><a class="page-link" href="#" routerLink="/services" (click)= "artzyad()" mdbWavesEffect>3</a></li>
+      <li class="page-item">
+        <a class="page-link" mdbWavesEffect>Next</a>
+      </li>
+    </ul>
+  </nav>
+
+
+</div>

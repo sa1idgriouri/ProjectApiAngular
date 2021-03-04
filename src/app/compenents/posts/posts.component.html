@@ -1,0 +1,27 @@
+
+
+         <div class="row ">
+           <div class="col-md-6  mb-3" *ngFor="let Post of Posts">
+            <mdb-card>
+              <!--Card image-->
+              <mdb-card-img src="{{ Post.image }}" alt="Card image cap"></mdb-card-img>
+              <!--Card content-->
+              <mdb-card-body>
+
+                <!--Title-->
+                <mdb-card-title>
+                  <h4>{{ Post.title }}</h4>
+                </mdb-card-title>
+
+                <!--Text-->
+                <mdb-card-text>
+                  {{ Post.cmnu }}
+
+                </mdb-card-text>
+
+                <a href="#" mdbBtn  [routerLink] = "['/blog/',Post.Id]"color="primary" mdbWavesEffect>Details</a>
+              </mdb-card-body>
+            </mdb-card>
+           </div>
+         </div>
+
